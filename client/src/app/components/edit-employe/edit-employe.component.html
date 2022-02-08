@@ -1,0 +1,22 @@
+
+
+
+<form >
+    <h1>Add new Empolye</h1>
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Name</mat-label>
+        <input matInput placeholder="Employe name" name="name" [(ngModel)]="employe.name">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Email</mat-label>
+        <input type="email" matInput placeholder="Employe email" name="email" [(ngModel)]="employe.email">
+    </mat-form-field>
+    
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Salary</mat-label>
+        <input type="number" matInput placeholder="Employe salary" name='salary' [(ngModel)]="employe.salary">
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" (click)="sendData()">Send</button>
+</form>
